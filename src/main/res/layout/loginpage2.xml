@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DCC7F6"
+
+    tools:context=".ui.home.Loginpage">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/purple"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="What Services do you Want ? "
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="25sp"
+                android:layout_marginTop="50dp"
+                tools:ignore="HardcodedText" />
+
+            <EditText
+                android:id="@+id/editTextText"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:ems="10"
+                android:inputType="text"
+                android:layout_margin="16dp"
+                android:hint="Search Services..."
+                android:textColor="@color/black"
+                android:textStyle="bold"
+
+                android:drawableStart="@android:drawable/ic_search_category_default"
+                android:background="@drawable/search_bar_background"
+                tools:ignore="Autofill,HardcodedText" />
+
+            <TextView
+                android:id="@+id/textView15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="12dp"
+                android:text="Services we offer "
+                android:textColor="#7B078F"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/view2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:clipToPadding="false"
+                    android:minHeight="200dp"
+                    android:paddingStart="12dp"
+                    android:paddingEnd="12dp"
+
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ProgressBar
+                    android:id="@+id/loading2"
+                    style="?android:attr/progressBarStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    tools:layout_editor_absoluteX="181dp"
+                    tools:layout_editor_absoluteY="76dp"
+                    tools:visibility="visible"
+                    tools:ignore="MissingConstraints" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <TextView
+                android:id="@+id/textView16"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="12dp"
+                android:text="Most asked Services "
+                android:textColor="#7B078F"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/view1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:clipToPadding="false"
+                    android:minHeight="200dp"
+                    android:paddingStart="12dp"
+                    android:paddingEnd="12dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ProgressBar
+                    android:id="@+id/loading1"
+                    style="?android:attr/progressBarStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    tools:ignore="MissingConstraints"
+                    tools:layout_editor_absoluteX="181dp"
+                    tools:layout_editor_absoluteY="76dp"
+                    tools:visibility="visible" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
